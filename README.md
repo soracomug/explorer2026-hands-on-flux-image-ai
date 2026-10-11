@@ -292,9 +292,17 @@ SORACOM のサービスを安全に利用するための仕組みです。大き
 
      ```json
      {
-       "content": "【名前やニックネーム】撮影したメータの数値を取得しました。\n読み取った数値：${payload.output.meter_value}\n画像: ${event.payload.presignedUrls.get}"
+       "content": "【名前やニックネーム】撮影したメータの数値を取得しました。\n読み取った数値：${payload.output.meter_value}",
+       "embeds": [
+         {
+           "image": { "url": "${event.payload.presignedUrls.get}" }
+         }
+       ]
      }
      ```
+
+     > **ポイント**: 画像は `content` に URL を直接書くと長い文字列がそのまま表示されてしまいます。上のように `embeds` の `image.url` に入れると、Discord が画像をプレビュー表示し、URL 文字列は見えなくなります。
+     > ※ この画像 URL（presigned URL）は一定時間（既定で約1時間）で失効し、その後は画像を開けなくなります。これは仕様です。
 
    - **アクションのアウトプットを別のチャネルに送信する**: `無効`（ここが終点なので送信不要）。
 4. 「作成する」をクリックします。
@@ -365,7 +373,12 @@ SORACOM のサービスを安全に利用するための仕組みです。大き
 
 ```json
 {
-  "content": "【名前】料理を判定しました。\n料理：${payload.output.dish}\nおいしそう度：${payload.output.yummy_score}/100\n栄養：${payload.output.nutrition}\n一言：${payload.output.comment}\n画像: ${event.payload.presignedUrls.get}"
+  "content": "【名前】料理を判定しました。\n料理：${payload.output.dish}\nおいしそう度：${payload.output.yummy_score}/100\n栄養：${payload.output.nutrition}\n一言：${payload.output.comment}",
+  "embeds": [
+    {
+      "image": { "url": "${event.payload.presignedUrls.get}" }
+    }
+  ]
 }
 ```
 
@@ -401,7 +414,12 @@ SORACOM のサービスを安全に利用するための仕組みです。大き
 
 ```json
 {
-  "content": "【名前】気分を判定しました。\n気分：${payload.output.mood}（確信度 ${payload.output.confidence}%）\n一言：${payload.output.comment}\n画像: ${event.payload.presignedUrls.get}"
+  "content": "【名前】気分を判定しました。\n気分：${payload.output.mood}（確信度 ${payload.output.confidence}%）\n一言：${payload.output.comment}",
+  "embeds": [
+    {
+      "image": { "url": "${event.payload.presignedUrls.get}" }
+    }
+  ]
 }
 ```
 
@@ -437,7 +455,12 @@ SORACOM のサービスを安全に利用するための仕組みです。大き
 
 ```json
 {
-  "content": "【名前】手書きメモを読み取りました。\n本文：${payload.output.text}\n要約：${payload.output.summary}\n読み取り：${payload.output.readable}\n画像: ${event.payload.presignedUrls.get}"
+  "content": "【名前】手書きメモを読み取りました。\n本文：${payload.output.text}\n要約：${payload.output.summary}\n読み取り：${payload.output.readable}",
+  "embeds": [
+    {
+      "image": { "url": "${event.payload.presignedUrls.get}" }
+    }
+  ]
 }
 ```
 
