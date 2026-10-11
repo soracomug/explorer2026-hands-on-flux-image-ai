@@ -82,10 +82,24 @@ SORACOM のサービスを安全に利用するための仕組みです。大き
 
 1. SORACOM ユーザーコンソールにログインします。
 2. 右上のメニューから「セキュリティ」を選択します。このとき **オペレーターID** も確認し、メモしておいてください。
+
+   ![セキュリティメニューを選択](images/steps/sam-01-security.png)
+
 3. 「SAMユーザー」を選択し、「SAMユーザーを作成」ボタンをクリックします。
+
+   ![SAMユーザーを作成](images/steps/sam-02-create-user.png)
+
 4. 名前（例: `handson-user`）を入力し、「作成」ボタンをクリックします。
+
+   ![ユーザー名を入力して作成](images/steps/sam-03-input-name.png)
+
 5. 作成したユーザーの名前（例: `handson-user`）をクリックします。
+
+   ![作成したユーザーをクリック](images/steps/sam-04-click-user.png)
+
 6. 「権限設定」で「直接指定」を選択し、以下の JSON を貼り付けて「保存」をクリックします。
+
+   ![権限設定](images/steps/sam-05-permission.png)
 
    ```json
    {
@@ -103,7 +117,12 @@ SORACOM のサービスを安全に利用するための仕組みです。大き
    > これにより、Harvest Files への書き込み権限のみが付与されます。
 
 7. 「認証設定」を選択し、「ログインパスワード」の右側の「+」ボタンをクリックします。
+
+   ![ログインパスワードを追加](images/steps/sam-06-password-add.png)
+
 8. 任意のパスワードを入力し、「設定」ボタンをクリックします。**このパスワードは後で使うのでメモ**してください。
+
+   ![パスワードを設定](images/steps/sam-07-password-set.png)
 
 > このステップで作成した「SAMユーザー名」「パスワード」、そして自分の「オペレーターID」を次のステップで使います。
 
@@ -141,7 +160,12 @@ SORACOM のサービスを安全に利用するための仕組みです。大き
 
 1. SORACOM ユーザーコンソールに戻ります。
 2. 左上のメニューから「SORACOM Harvest Files」を選択します。
+
+   ![Harvest Files メニューを選択](images/steps/harvest-01-menu.png)
+
 3. ファイル一覧に、アップロードした画像が表示されていることを確認します。ファイル名をクリックするとプレビュー／ダウンロードできます。
+
+   ![アップロードしたファイルの一覧](images/steps/harvest-02-filelist.png)
 
 ---
 
@@ -160,21 +184,41 @@ SORACOM のサービスを安全に利用するための仕組みです。大き
 ### 4-0. Fluxアプリを作成する
 
 1. SORACOM ユーザーコンソールの左上メニューから「Fluxアプリ」を選択します。
+
+   ![Fluxアプリ メニューを選択](images/steps/flux-01-menu.png)
+
 2. 「＋新しいアプリを作成する」をクリックします。
+
+   ![新しいアプリを作成](images/steps/flux-02-create-app.png)
+
 3. 「最初から作成」をクリックします。
+
+   ![最初から作成を選択](images/steps/flux-03-from-scratch.png)
+
 4. 名前（例: `Fluxハンズオン`）を入力し、「作成」をクリックします。
+
+   ![アプリ名を入力して作成](images/steps/flux-04-input-name.png)
 
 ### 4-1. トリガー：Harvest Files Event Channel
 
 アプリが動き出すきっかけ（トリガー）を作ります。
 
 1. 「＋チャネルを追加する」を選択します。
+
+   ![チャネルを追加](images/steps/trigger-01-create-channel.png)
+
 2. 「SORACOM Harvest Files」を選択し、「次へ」をクリックします。
+
+   ![トリガーに Harvest Files を選択](images/steps/trigger-02-select.png)
+
 3. チャネルを設定します。
    - **名前**: `Harvest Files Event Channel`
    - **ファイルパス（前方一致）**: `/`（すべてのアップロードを対象にする場合。特定フォルダだけなら `/meters` など）
    - **イベントタイプ**: `ファイル作成` と `ファイル更新` にチェック（`ファイル削除` はオフ）
    - **有効**: オン
+
+   ![チャネルの設定](images/steps/trigger-03-settings.png)
+
 4. 「チャネルを作成する」をクリックします。
 
 ### 4-2. AIブロック：数値読み取り（Google Gemini）
@@ -478,6 +522,3 @@ Harvest Files へのアップロードをトリガーにしているため、不
    - Discord Webhook は Discord 側で該当 Webhook を削除する（URL を知る全員が投稿できなくなる）。
    - SORACOM の SAM ユーザー／認証キーを使った場合は、該当キーを無効化・削除する。
 
----
-
-&copy; 2025 SORACOM Flux AI画像判定ハンズオン
