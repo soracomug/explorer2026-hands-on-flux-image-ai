@@ -56,11 +56,11 @@
 
 1. 「アクション」タブをクリックし、「アクションを追加」をクリックします。
 
-   ![アクションを追加](images/steps/ai-01-add-action.png)
+   ![[ai-01-add-action.png] アクションを追加](images/steps/ai-01-add-action.png)
 
 2. 「AI」を選択し、「OK」をクリックします。
 
-   ![AIアクションを選択](images/steps/ai-02-select.png)
+   ![[ai-02-select.png] AIアクションを選択](images/steps/ai-02-select.png)
 
 3. 設定します。
    - **名前**: `数値読み取り`
@@ -78,9 +78,9 @@
    - **アクションのアウトプットを別のチャネルに送信する**: `有効` にします。
    - **送信先チャネル**: 「新しくチャネルを作成する」を選び、チャネル名に `Output` を入力します（既にある場合は「既存のチャネルを選択する」で `Output` を選択）。
 
-   ![AIモデルとプロンプトの設定](images/steps/ai-03-model-prompt.png)
+   ![[ai-03-model-prompt.png] AIモデルとプロンプトの設定](images/steps/ai-03-model-prompt.png)
 
-   ![画像リストとOutput送信の設定](images/steps/ai-04-image-output.png)
+   ![[ai-04-image-output.png] 画像リストとOutput送信の設定](images/steps/ai-04-image-output.png)
 
 4. 「作成する」をクリックします。
 
@@ -116,11 +116,11 @@
 
 1. 「Output」チャネルを選択した状態で、「アクション」タブの「アクションを追加」をクリックします。
 
-   ![Webhookアクションを追加](images/steps/webhook-01-add-action.png)
+   ![[webhook-01-add-action.png] Webhookアクションを追加](images/steps/webhook-01-add-action.png)
 
 2. 「Webhook」を選択し、「OK」をクリックします。
 
-   ![Webhookを選択](images/steps/webhook-02-select.png)
+   ![[webhook-02-select.png] Webhookを選択](images/steps/webhook-02-select.png)
 
 3. 設定します。
    - **名前**: `Discord通知`
@@ -152,7 +152,7 @@
 
    - **アクションのアウトプットを別のチャネルに送信する**: `無効`（ここが終点なので送信不要）。
 
-   ![Webhookの設定（URL・ヘッダー・ボディ）](images/steps/webhook-03-settings.png)
+   ![[webhook-03-settings.png] Webhookの設定（URL・ヘッダー・ボディ）](images/steps/webhook-03-settings.png)
 
 4. 「作成する」をクリックします。
 
@@ -161,7 +161,7 @@
 1. もう一度アプリに戻り、**新しいメーターの画像をアップロード**します。
 2. しばらくすると、Discord のチャンネルに読み取り結果と画像リンクが届きます。届けば成功です 🎉
 
-   ![Discordに届いた通知](images/steps/test-01-discord.png)
+   ![[test-01-discord.png] Discordに届いた通知](images/steps/test-01-discord.png)
 
 ## うまくいかない場合：実行履歴の確認
 
