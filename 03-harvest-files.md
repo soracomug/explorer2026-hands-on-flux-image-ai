@@ -3,7 +3,7 @@
 アップロードしたファイルが正しく保存されているか確認します。
 
 1. SORACOM ユーザーコンソールに戻ります。
-2. 左上のメニューから「SORACOM Harvest Files」を選択します。
+2. 左上のメニューから「**データ収集・蓄積・可視化**」→「**SORACOM Harvest Files**」を選択します。
 
    ![Harvest Files メニューを選択](images/steps/harvest-01-menu.png)
 

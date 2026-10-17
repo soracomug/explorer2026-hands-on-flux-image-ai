@@ -16,20 +16,20 @@
 Harvest Files の利用には SORACOM 利用料が発生します。無駄な費用を抑えるため、使い終わったら以下を削除してください。
 
 **Harvest Files のファイル削除**
-1. ユーザーコンソール → 「SORACOM Harvest Files」。
+1. ユーザーコンソール左上の「メニュー」→「**データ収集・蓄積・可視化**」→「**SORACOM Harvest Files**」を開きます。
 2. 削除したいファイルを選択し、「削除」をクリック。
 
    ![[cleanup-01-harvest.png] Harvest Files のファイルを削除](images/steps/cleanup-01-harvest.png)
 
 **SAMユーザーの削除**
-1. ユーザーコンソール → 右上「セキュリティ」→「SAMユーザー」。
+1. ユーザーコンソール右上の「**セキュリティ**」→「**SAMユーザー**」を開きます。
 2. 対象ユーザー（例: `handson-user`）を選択し、「削除」をクリック。
 
    ![[cleanup-02-sam.png] SAMユーザーを削除](images/steps/cleanup-02-sam.png)
 
 **Fluxアプリの削除**
 Harvest Files へのアップロードをトリガーにしているため、不意な実行を防ぐために削除をおすすめします。
-1. ユーザーコンソール → 「Fluxアプリ」。
+1. ユーザーコンソール左上の「メニュー」→「**SORACOM Flux**」→「**Flux アプリ**」を開きます。
 2. 対象アプリをクリック → 右上の「X」（Fluxアプリを削除）→「削除する」。
 
    ![[cleanup-03-flux.png] Fluxアプリを削除](images/steps/cleanup-03-flux.png)

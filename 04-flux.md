@@ -12,7 +12,7 @@
 
 ## 4-0. Fluxアプリを作成する
 
-1. SORACOM ユーザーコンソールの左上メニューから「Fluxアプリ」を選択します。
+1. SORACOM ユーザーコンソールの左上メニューから「**SORACOM Flux**」→「**Flux アプリ**」を選択します。
 
    ![Fluxアプリ メニューを選択](images/steps/flux-01-menu.png)
 
