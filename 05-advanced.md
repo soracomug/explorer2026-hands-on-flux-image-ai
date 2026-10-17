@@ -7,7 +7,7 @@
 
 ## 別の画像で試してみる
 
-プロンプトを差し替えるだけで、メーター以外のいろんな画像を判定できます。下の例は **AIブロックのプロンプト**と **Discordブロックの HTTPボディ** をセットで差し替えると動きます。
+プロンプトを差し替えるだけで、メーター以外のいろんな画像を判定できます。
 
 ### 例1：料理の画像から、おいしさ・栄養を判定する
 
@@ -40,7 +40,7 @@
 
 ```json
 {
-  "content": "【名前】料理を判定しました。\n料理：${payload.output.dish}\nおいしそう度：${payload.output.yummy_score}/100\n栄養：${payload.output.nutrition}\n一言：${payload.output.comment}",
+  "content": "【名前やニックネーム】料理を判定しました。\n料理：${payload.output.dish}\nおいしそう度：${payload.output.yummy_score}/100\n栄養：${payload.output.nutrition}\n一言：${payload.output.comment}",
   "embeds": [
     {
       "image": { "url": "${event.payload.presignedUrls.get}" }
@@ -81,7 +81,7 @@
 
 ```json
 {
-  "content": "【名前】気分を判定しました。\n気分：${payload.output.mood}（確信度 ${payload.output.confidence}%）\n一言：${payload.output.comment}",
+  "content": "【名前やニックネーム】気分を判定しました。\n気分：${payload.output.mood}（確信度 ${payload.output.confidence}%）\n一言：${payload.output.comment}",
   "embeds": [
     {
       "image": { "url": "${event.payload.presignedUrls.get}" }
@@ -122,7 +122,7 @@
 
 ```json
 {
-  "content": "【名前】手書きメモを読み取りました。\n本文：${payload.output.text}\n要約：${payload.output.summary}\n読み取り：${payload.output.readable}",
+  "content": "【名前やニックネーム】手書きメモを読み取りました。\n本文：${payload.output.text}\n要約：${payload.output.summary}\n読み取り：${payload.output.readable}",
   "embeds": [
     {
       "image": { "url": "${event.payload.presignedUrls.get}" }
@@ -163,7 +163,7 @@
 
 ```json
 {
-  "content": "【名前】人数を数えました。\n人数：${payload.output.count}人\n混雑度：${payload.output.crowd_level}\n一言：${payload.output.comment}",
+  "content": "【名前やニックネーム】人数を数えました。\n人数：${payload.output.count}人\n混雑度：${payload.output.crowd_level}\n一言：${payload.output.comment}",
   "embeds": [
     {
       "image": { "url": "${event.payload.presignedUrls.get}" }
