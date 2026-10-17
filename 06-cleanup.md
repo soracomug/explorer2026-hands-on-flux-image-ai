@@ -19,14 +19,20 @@ Harvest Files の利用には SORACOM 利用料が発生します。無駄な費
 1. ユーザーコンソール → 「SORACOM Harvest Files」。
 2. 削除したいファイルを選択し、「削除」をクリック。
 
+   ![[cleanup-01-harvest.png] Harvest Files のファイルを削除](images/steps/cleanup-01-harvest.png)
+
 **SAMユーザーの削除**
 1. ユーザーコンソール → 右上「セキュリティ」→「SAMユーザー」。
 2. 対象ユーザー（例: `handson-user`）を選択し、「削除」をクリック。
+
+   ![[cleanup-02-sam.png] SAMユーザーを削除](images/steps/cleanup-02-sam.png)
 
 **Fluxアプリの削除**
 Harvest Files へのアップロードをトリガーにしているため、不意な実行を防ぐために削除をおすすめします。
 1. ユーザーコンソール → 「Fluxアプリ」。
 2. 対象アプリをクリック → 右上の「X」（Fluxアプリを削除）→「削除する」。
+
+   ![[cleanup-03-flux.png] Fluxアプリを削除](images/steps/cleanup-03-flux.png)
 
 **（運営向け）当日配布した認証情報・URLの無効化**
 サイトURL・ログイン情報（メールアドレス／パスワード）・Discord Webhook URL は、Connpass の「参加者への情報」（参加者・発表者のみに公開）で配布します。イベント終了後は、念のため以下を実施してください。
