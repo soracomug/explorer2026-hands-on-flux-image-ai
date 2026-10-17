@@ -17,7 +17,7 @@ Harvest Files の利用には SORACOM 利用料が発生します。無駄な費
 
 **Harvest Files のファイル削除**
 1. ユーザーコンソール左上の「メニュー」→「**データ収集・蓄積・可視化**」→「**SORACOM Harvest Files**」を開きます。
-2. 削除したいファイルを選択し、「削除」をクリック。
+2. 削除したいファイルにチェックを入れて選択し、「**操作**」→「**ファイルを削除**」をクリックします。
 
    ![[cleanup-01-harvest.png] Harvest Files のファイルを削除](images/steps/cleanup-01-harvest.png)
 
