@@ -50,11 +50,11 @@ Discord チャンネル
 
 ## 目次
 
-1. [はじめに](./00-introduction.md)
-2. [SAMユーザーの作成](./01-sam-user.md)
-3. [アプリでのログインとファイルアップロード](./02-upload.md)
-4. [SORACOM Harvest Files での確認](./03-harvest-files.md)
-5. [SORACOM Flux でメーター読み取り＋Discord通知を作る（本題）](./04-flux.md)
-6. [一通りうまくいったら（応用）](./05-advanced.md)
-7. [後片付け](./06-cleanup.md)
-8. [参考リンク](./07-references.md)
+0. [はじめに](./00-introduction.md)
+1. [SAMユーザーの作成](./01-sam-user.md)
+2. [アプリでのログインとファイルアップロード](./02-upload.md)
+3. [SORACOM Harvest Files での確認](./03-harvest-files.md)
+4. [SORACOM Flux でメーター読み取り＋Discord通知を作る（本題）](./04-flux.md)
+5. [一通りうまくいったら（応用）](./05-advanced.md)
+6. [後片付け](./06-cleanup.md)
+7. [参考リンク](./07-references.md)
